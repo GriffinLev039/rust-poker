@@ -1,0 +1,34 @@
+To-Do:
+	- Create some form of a UML diagram.
+	- Learn how to create modules.
+	- Create 'Hand', 'Player', 'Table', etc. Objects.
+	- Finish To-Do List.
+	- Error handling for removing/adding a card from a hand/deck.
+	- Interface for adding/removing cards.
+	- Refactoring large chunks of code *already*! oh boy!
+
+	- Fix draw/discard system to prevent discarding when a card
+	cannot be added to the deck.
+		- Likely will do this by 'peeking', adding, and if adding succeeds discarding.
+		
+	
+General Plan:
+	1. Minimum Viable Product is a basic poker sim.
+	2. Implement some form of networking (Central table with hands).
+	3. Many tables with leaderboard n all that
+	(2 and 3 can be switched)
+
+if a key is 4
+	then return FourKind
+else if a key is 3
+	then if a different key is 2
+		return fullhouse
+	else
+		return threekind
+else if a key is 2
+	if a diff key is 2
+		return twopair
+	else
+		return pair
+else
+	return highcard
